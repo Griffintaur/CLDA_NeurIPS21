@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+  body {
+    font-family: "Titillium Web","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:300;
+    font-size:18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+  }
+
+  h1 {
+    font-weight:300;
+  }
+
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  .link2 {
+    text-decoration: none;
+    display: inline;
+    margin-right: 5px;
+  }
+
+  .fakelink {
+    text-decoration: none;
+    /* cursor: pointer; */
+  }
+
+  element.style {
+    overflow: hidden;
+    display: block;
+  }
+  .pre-white-space {
+    white-space: pre;
+  }
+  .bibref {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: none;
+    font-size: 14px;
+    font-family: monospace;
+  }
+
+  img.rounded {
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+</style>
+<script type="text/javascript" src="resources/hidebib.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+  <head>
+    <link rel="icon" type="image/png" href="resources/ucsd_logo.png">
+    <title>CLDA: Contrastive Learning for Semi-Supervised Domain Adaptation</title>
+    <meta property='og:title' content='CLDA: Contrastive Learning for Semi-Supervised Domain Adaptation' />
+    <meta property="og:description" content="Ankit Singh. CLDA: Contrastive Learning for Semi-Supervised Domain Adaptation. In CVPR, 2021." />
+    <meta property='og:url' content='https://griffintaur.github.io/CLDA_NeurIPS/' />
+  </head>
+  <body>
+        <br>
+        <center><span style="font-size:40px;font-weight:bold;color:#182B49">CLDA: Contrastive Learning for Semi-Supervised </br> Domain Adaptation</span></center>
+
+        <table align=center width=900px>
+          <tr>
+            <td align=center width=180px>
+            <center><span style="font-size:20px"><a href="https://griffintaur.github.io/" target="_blank">Ankit
+            Singh</a></span></center></td>
+            <tr/>
+         </table>
+
+        <table align=center width=800px>
+          <tr>
+            <td align=center width=150px><center><span style="font-size:18px">IIT Madras</span></center></td>
+          <tr/>
+        </table> 
+        <table align=center width=400px>
+          <tr>
+            <td align=center width=150px>
+            <center><span style="font-size:24px"><a href="http://cvpr2021.thecvf.com/" target="_blank">NeurIPS 2021</a></span></center></td>
+          <tr/>
+        </table>
+        <table align=center width=600px>
+            <tr><td width=600px>
+              <center><a href="resources/arch_clda.png"><img src = "resources/arch_clda.png" width="1000px"></img></a><br></center>
+            </td></tr>
+        </table>
+
+        <center id="abstract"><h1>Abstract</h1></center>
+        Unsupervised Domain Adaptation (UDA) aims to align the labeled source distribution with the unlabeled target distribution to obtain domain invariant predictive models. However, the application of well-known UDA approaches does not generalize well in Semi-Supervised Domain Adaptation (SSDA) scenarios where few labeled samples from the target domain are available.
+        This paper proposes a simple Contrastive Learning framework for semi-supervised Domain Adaptation (CLDA) that attempts to bridge the intra-domain gap between the labeled and unlabeled target distributions and the inter-domain gap between source and unlabeled target distribution in SSDA. We suggest employing class-wise contrastive learning to reduce the inter-domain gap and instance-level contrastive alignment between the original(input image) and strongly augmented unlabeled target images to minimize the intra-domain discrepancy. We have empirically shown that both of these modules complement each other to achieve superior performance. Experiments on three well-known domain adaptation benchmark datasets, namely DomainNet, Office-Home, and Office31, demonstrate the effectiveness of our approach. CLDA achieves state-of-the-art results on all the above datasets. <br>
+        <br>
+        <hr>
+
+        <center id="results0"><h1>Results on Office-Home</h1></center>
+        <table align=center width=1000px>
+            <tr><td width=1000px>
+              <center><a href="resources/office-home.png"><img src = "resources/office-home.png" width ="900px"></img></a><br></center>
+            </td></tr>
+          </table>
+        <br>
+        <br>
+        <br>
+        <hr>
+
+        <center id="results0"><h1>Results on Domain-Net</h1></center>
+        <table align=center width=1000px>
+            <tr><td width=1000px>
+              <center><a href="resources/domain-net.png"><img src = "resources/domain-net.png" width="900px"></img></a><br></center>
+            </td></tr>
+          </table>
+        <br>
+        <hr>
+
+
+        
+        <center id="sourceCode"><h1>Paper, code and other details</h1></center>
+
+
+        <table align=center width=900px>
+            <tr></tr>
+          <tr>
+            <td >
+        <a href="https://griffintaur.github.io/CLDA_NeurIPS/"><img class="paperpreview" src="resources/arch_small.png" width="200px"/></a>
+          </td>
+          <td></td>
+          <td width=700px > <span style="font-size:20px">
+            Ankit Singh<br/> <a href="https://proceedings.neurips.cc/paper/2021/file/288cd2567953f06e460a33951f55daaf-Paper.pdf">CLDA: Contrastive Learning for Semi-Supervised Domain Adaptation</a> <br/> <i>Neural Information Processing Systems (NeurIPS)</i>, 2021 <br/>
+            [<a href="https://proceedings.neurips.cc/paper/2021/file/288cd2567953f06e460a33951f55daaf-Paper.pdf">PDF</a>]
+            [<a href="https://openreview.net/attachment?id=1ODSsnoMBav&name=supplementary_material">Supp</a>]
+            
+            [<a href="https://github.com/Griffintaur/CLDA_NeurIPS21">Code</a>]
+            [<a href="resources/CLDA_bib.txt">Bibtex</a>]
+
+</span>
+        </td>
+        </tr>
+
+      </table>
+
+      <br>
+      <hr>
+
+      <br/>
+
+    <br><br>
+<script xml:space="preserve" language="JavaScript">
+hideallbibs();
+</script>
+</body>
+</html>
