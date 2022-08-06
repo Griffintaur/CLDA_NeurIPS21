@@ -68,7 +68,7 @@ data---
 #### Train
 * DomainNet (clipart, painting, real, sketch)
 ```
-python main.py --dataset multi --source real --target sketch --save_interval 5000 --steps 70000 --net resnet34 --num 3 --save_check
+python clda_final.py --dataset multi --source real --target sketch --save_interval 500 --steps 50000 --net resnet34 --num 3 --save_check
 ```
 * Office-home (Art, Clipart, Product, Real)
 * Office (amazon, dslr, webcam)
